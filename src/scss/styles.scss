@@ -1,0 +1,23 @@
+// Import Bootstrap
+@import "bootstrap/scss/bootstrap.scss";
+
+$ivv-red: rgb(95, 2, 31);
+
+.red-bg {
+    background-color: $ivv-red!important;
+}
+
+// Resets for body and html height for sticky footer
+body,
+html {
+    height: 100%;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.carousel-item {
+    position: relative !important; /* Bootstrap is insistent */
+    height: 65vh;
+    min-height: 300px;
+    background: no-repeat center scroll;
+    background-size: cover;
+}

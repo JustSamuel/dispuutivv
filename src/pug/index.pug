@@ -1,0 +1,448 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='Website van Hèt Dispuut "In Vino Veritas"')
+        meta(name='author', content='Praeses')
+
+        title Dispuut "In Vino Veritas"
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+        script(src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous")
+        script(src="./js/scripts.js")
+        include includes/css.pug
+
+    body.d-flex.flex-column.h-100
+
+        main.flex-shrink-0
+
+            // Navigation
+            include includes/navbar.pug
+
+            // Header
+            header
+                .carousel#carousel.slide(data-bs-ride="carousel")
+                    .carousel-indicators
+                        button.active(data-bs-target="#carousel" data-bs-slide-to="0" aria-current="true")
+                        button(data-bs-target="#carousel" data-bs-slide-to="1" aria-current="true")
+                        button(data-bs-target="#carousel" data-bs-slide-to="2" aria-current="true")
+                        button(data-bs-target="#carousel" data-bs-slide-to="3" aria-current="true")
+                        button(data-bs-target="#carousel" data-bs-slide-to="4" aria-current="true")
+                    .carousel-inner(role='listbox')
+                        .carousel-item.active(style="background-image: url('./assets/img/carousel/Statieportret2019.gif')")
+                        .carousel-item(style="background-image: url('./assets/img/carousel/IVV-Spel-Met-Ballen-2023-166942.jpeg')")
+                        .carousel-item(style="background-image: url('./assets/img/carousel/Praesesportretten.png')")
+                        .carousel-item(style="background-image: url('./assets/img/carousel/carousel3.gif')")
+                        .carousel-item(style="background-image: url('./assets/img/carousel/carousel4.gif')")
+                    button.carousel-control-prev(data-bs-target="#carousel", data-bs-slide="prev")
+                        span.carousel-control-prev-icon
+                    button.carousel-control-next(data-bs-target="#carousel", data-bs-slide="next")
+                        span.carousel-control-next-icon
+
+
+            section#introduction
+                .container.px-4.mt-5
+                    .row
+                        h1.fw-bold.mb-3 Dispuut "In Vino Veritas"
+                    .row
+                        h3.mb-4.fst-italic Post multa saecula, pocula nulla!
+                    .row
+                        h3.mb-0
+                            | De proost van de dag is
+                            span#cheer-of-the-day
+
+                .container.px-4.mt-3
+                    .row
+                        .col-lg-6
+                            .fs-5.mb-4 Hèt Dispuut "In Vino Veritas" staat voor de bourgondische levensstijl, heerlijk eten en bovenal de consumptie van de alom bekende godendrank op druivenbasis: wijn. Bij I.V.V staat het genieten van het studentenleven centraal, een visie waaraan de leden van moedervereniging GEWIS herinnerd worden door middel van, onder andere, de beruchte Maand'lijksche Borrels, het jaarlijks terugkerende Spel met Ballen en als spektakelsuk het alom populaire Decadent Weekend.
+                            .fs-5.mb-4 Op deze digitale pagina van Hèt Dispuut vindt u een overzicht van onze leden, ieder vergezeld door een onmisbaar kiekje van betreffend lid, een deelverzameling van onze dispuutsstukken, en contactgegevens indien u in contact wil komen met onze Ab-Actis.
+                        .col-lg-6
+                            img.img-fluid.rounded(src='./assets/img/Borreltijd.png', alt='Borreltijd')
+            // Blog preview section
+            section#leden
+                .container.px-4.mt-5
+                    hr
+                    .row
+                        h1.mb-3 Onze Leden
+                    .row
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/leden/Oosterholt.png')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Dhr. S.A.J. Oosterholt
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Praeses, tevens Typo3-fanaticus
+                                        li Lid sedert mei 2022
+                                        li Favoriete wijn: Pagus Bisano Amarone della Valpolicella 2018
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/leden/Mokveld.jpg')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Dhr. S.A. Mokveld
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Ab-Actis
+                                        li Lid sedert december 2022
+                                        li Favoriete wijn: Onbekend
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/leden/Verkade.jpeg')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Dhr. D.P. Verkade
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Quaestor, tevens Vice-Praeses, tevens Proclamator, tevens Kelner, tevens Homines-Attributes
+                                        li Lid sedert november 2021
+                                        li Favoriete wijn: Graham's Late Bottled Vintage Port
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/Leden/Maes.png', alt='')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Dhr. Q. Maes
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Vice Ab-Actis
+                                        li Lid sedert juli 2018
+                                        li Favoriete wijn: 2012 Grizzly Bear Cabernet Sauvignon
+                                        p.fst-italic.mt-3.text-center "Kwantiteit is ook een kwaliteit!"
+
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/Leden/Bosma.png', alt='')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Dhr. B.H. Bosma
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Pedel
+                                        li Lid sedert december 2019
+                                        li Favoriete wijn: 2018 Emilio Moro Malleolus Melchior
+                                        p.fst-italic.mt-3.text-center "Als de Ab-Actis moet pissen, dan moet de Ab-Actis pissen."
+
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/Leden/Zwerts.png', alt='')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Mgr. B.L.H.J. Zwerts
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Inquisiteur
+                                        li Lid sedert december 2003
+                                        li Favoriete wijn: Onbekend
+                                        p.fst-italic.mt-3.text-center "Nobody expects the Zwertsian Inquisition!"
+
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/Leden/Sanders.png', alt='')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Mgr. J.J. Sanders
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Vinoloog
+                                        li Lid sedert november 2006
+                                        li Favoriete wijn: Domaine de Courcel Pommard Premier Cru Les Rugiens 2006
+
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/Leden/Houthuijs.png', alt='')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Mgr. T.J. Houthuijs
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Dux Luxuriae
+                                        li Lid sedert december 2019
+                                        li Favoriete wijn: pakwijn
+
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/Leden/Aerts.png', alt='')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Mgr. N.K.M. Aerts
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Lid sedert december 2007
+                                        li Favoriete wijn: Onbekend
+
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/Leden/Beckers.png', alt='')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Mgr. R.J.J. Beckers
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Lid sedert december 2003
+                                        li Favoriete wijn: Onbekend
+
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/Leden/Beekveld.png', alt='')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Mgr. E.T.G. van Beekveld
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Lid sedert juni 2012
+                                        li Favoriete wijn: Zecchini Valpolicella Valpantena Superiore Ripasso 2011
+
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/Leden/Ceelen.png', alt='')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Mgr. P. Ceelen
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Lid sedert december 2003
+                                        li Favoriete wijn: Onbekend
+
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/Leden/Damhuis.png', alt='')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Mgr. L.R.J. Damhuis
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Lid sedert april 2015
+                                        li Favoriete wijn: Whale's Tale Sauvignon Blanc
+                                        p.fst-italic.mt-3.text-center "Als één hert over De Dam is, volgen er meer!"
+
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/Leden/Emons.png', alt='')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Dhr. D.C.L. Emons
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Lid sedert mei 2019
+                                        li Favoriete wijn: Thompson Estate Margaret River Chardonnay
+
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/Leden/Fasting.png', alt='')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Mgr. L.A. Fasting
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Lid sedert juni 2012
+                                        li Favoriete wijn: Onbekend
+
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/Leden/Geffen.png', alt='')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Mgr. B.A.M. van Geffen
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Lid sedert december 2016
+                                        li Favoriete wijn: Isole E Olena Chianti Classico 2014
+
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/Leden/Gieling.png', alt='')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Dhr. B.W.T. Gieling
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Lid sedert september 2019
+                                        li Favoriete wijn ≠ Chardonnay
+
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/Leden/Godtschalk.png', alt='')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Mgr. A.S. Godtschalk
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Lid sedert juni 2009
+                                        li Favoriete wijn: Onbekend
+
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/Leden/Horssen.png', alt='')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Dhr. C. van Horssen
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Lid sedert september 2016
+                                        li Favoriete wijn: 2009 Chateau Margaux
+
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/Leden/Janssen.png', alt='')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Mgr. G. Janssen
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Lid sedert december 2016
+                                        li Favoriete wijn: Boschendal Cabernet Sauvignon (1685 series)
+
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/Leden/Keltjens.png', alt='')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Mgr. V.A.G. Keltjens
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Lid sedert augustus 2013
+                                        li Favoriete wijn: Clavis Aurea Reserva Do Tejo DOC 2012
+
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/Leden/Kerstens.png', alt='')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Mgr. S.L. Kerstens
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Lid sedert februari 2011
+                                        li Favoriete wijn: Havana Club 7
+
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/Leden/Ledeboer.png', alt='')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Mgr. T.S. Ledeboer
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Lid sedert april 2015
+                                        li Favoriete wijn: Inglenook Cabernet Sauvignon 1941
+
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/Leden/Lodewijks.png', alt='')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Mgr. B. Lodewijks
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Lid sedert april 2015
+                                        li Favoriete wijn: Chateauneuf du Pape 1991
+                                        p.fst-italic.mt-3.text-center "Ja ja, ben nog niet zó ouderwets!"
+
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/Leden/Meeles.png', alt='')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Mgr. T. Meeles
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Lid sedert augustus 2013
+                                        li Favoriete wijn: Paolo Scavino - Barolo Bric Dël Fiasc 2016
+                                        p.fst-italic.mt-3.text-center "Meeles, die heeft pas visie!"
+
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/Leden/Meijaard.png', alt='')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Mgr. Y.J. Meijaard
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Lid sedert juli 2017
+                                        li Favoriete wijn: Bodegas Malaga Virgen Pedro Ximénez Don Juan 2009
+
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/Leden/Nijhuis.png', alt='')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Mgr. T.R.Th. Nijhuis
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Lid sedert mei 2008
+                                        li Favoriete wijn: Onbekend
+
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/Leden/Roobeek.png', alt='')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Mgr. E. Roobeek
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Lid sedert augustus 2007
+                                        li Favoriete wijn: Onbekend
+
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/Leden/Schepens.png', alt='')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Mgr. R.L. Schepens
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Lid sedert augustus 2013
+                                        li Favoriete wijn: 2012 Domain des Malandes Chablis Premier Cru
+
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/Leden/Thiel.png', alt='')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Mgr. J.B. van Thiel
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Lid sedert oktober 2004
+                                        li Favoriete wijn: Onbekend
+
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/Leden/Timmerman.png', alt='')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Mgr. Th.R. Timmerman
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Lid sedert april 2006
+                                        li Favoriete wijn: Chateau Roudier, St.-Emilion (2003)
+
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/Leden/Veenendaal.png', alt='')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Mgr. M. van Veenendaal
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Lid sedert mei 2018
+                                        li Favoriete wijn: 2016 Paolo Scavino Barolo Ravera DOCG
+                                        p.fst-italic.mt-3.text-center "Ik ben niet dronken, ik ben gezellig!"
+
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/Leden/Verheijen.png', alt='')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Mgr. W.J.A. Verheijen
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Lid sedert december 2003
+                                        li Favoriete wijn: Onbekend
+
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/Leden/Wong.png', alt='')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Mgr. Y.G. Wong
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Lid sedert april 2005
+                                        li Favoriete wijn: Chateau de Lugagnac, Frankrijk (2004)
+
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/Leden/Zelst.png', alt='')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Mgr. S.J. van Zelst
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Lid sedert april 2010
+                                        li Favoriete wijn: Chateauneuf du Pape, Frankrijk (1996)
+
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/Leden/Smeets.png', alt='')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Martinus (Mart) Jan Smeets
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Erelid sedert 2008
+                                        li Favoriete wijn: op tafel bij Avondgasten
+
+
+            section#contact
+                .row
+                    .col-lg-6
+                        img.img-fluid(src='./assets/img/Cantus.png', alt='')
+                .container.px-4.my-5
+                    .row
+                        //.col-lg-4.d-flex
+                        //    img.img-fluid.rounded(src='photos/Cantus.png', alt='')
+                        .col-lg-4.d-flex
+                            p
+                                b Algemene contactgegevens:
+                                br
+                                | Tel. 040 - 247 28 15
+                                br
+                                | E-Mail: ab-actis(at)dispuutivv(punt)nl
+                        .col-lg-4.d-flex
+                            p
+                                b Bezoekadres:
+                                br
+                                | MF 3.155
+                                br
+                                | Den Dolech 2
+                                br
+                                | 5612 AZ Eindhoven
+                        .col-lg-4.d-flex
+                            p
+                                b Postadres:
+                                br
+                                | Studievereniging GEWIS
+                                br
+                                | t.a.v. Dispuut "In Vino Veritas"
+                                br
+                                | Postbus 513
+                                br
+                                | 5600 MB Eindhove
+
+        // Footer
+        include includes/footer.pug
+
+        include includes/scripts.pug
