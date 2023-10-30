@@ -74,6 +74,14 @@ html(lang='en')
                     hr
                     .row
                         h1.mb-3 Onze Leden
+
+                    //  VOLGORDE
+                    //  Dagelijks bestuur: Praeses, Ab-Actis, Questor, Vice-Praeses
+                    //  Daarna leden met titel alfabetisch
+                    //  Daarna leden alfabetisch
+
+                    // -------------------- DAGELIJKS BESTUUR --------------------
+
                     .row
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
@@ -102,6 +110,42 @@ html(lang='en')
                                         li Quaestor, tevens Vice-Praeses, tevens Proclamator, tevens Kelner, tevens Homines-Attributes
                                         li Lid sedert november 2021
                                         li Favoriete wijn: Graham's Late Bottled Vintage Port
+
+                        // -------------------- MET TITLES --------------------
+
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/Leden/Bosma.png', alt='')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Mgr. B.H. Bosma
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Pedel
+                                        li Lid sedert december 2019
+                                        li Favoriete wijn: 2018 Emilio Moro Malleolus Melchior
+                                        p.fst-italic.mt-3.text-center "Als de Ab-Actis moet pissen, dan moet de Ab-Actis pissen."
+
+
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/Leden/Damhuis.png', alt='')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Mgr. L.R.J. Damhuis
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Dux Luxuriae
+                                        li Lid sedert april 2015
+                                        li Favoriete wijn: Whale's Tale Sauvignon Blanc
+                                        p.fst-italic.mt-3.text-center "Als één hert over De Dam is, volgen er meer!"
+
+                        .col-lg-4.col-sm-6.mb-5
+                            .card.h-100.border-1.shadow-sm
+                                img.card-img-top(src='./assets/img/Leden/Houthuijs.png', alt='')
+                                .card-body.p-4
+                                    h4.fw-bold.card-title.mb-3 Mgr. T.J. Houthuijs
+                                    ul.fs-5.list-group.list-unstyled
+                                        li Artis Vinus
+                                        li Lid sedert december 2019
+                                        li Favoriete wijn: pakwijn
+
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
                                 img.card-img-top(src='./assets/img/Leden/Maes.png', alt='')
@@ -113,27 +157,6 @@ html(lang='en')
                                         li Favoriete wijn: 2012 Grizzly Bear Cabernet Sauvignon
                                         p.fst-italic.mt-3.text-center "Kwantiteit is ook een kwaliteit!"
 
-                        .col-lg-4.col-sm-6.mb-5
-                            .card.h-100.border-1.shadow-sm
-                                img.card-img-top(src='./assets/img/Leden/Bosma.png', alt='')
-                                .card-body.p-4
-                                    h4.fw-bold.card-title.mb-3 Dhr. B.H. Bosma
-                                    ul.fs-5.list-group.list-unstyled
-                                        li Pedel
-                                        li Lid sedert december 2019
-                                        li Favoriete wijn: 2018 Emilio Moro Malleolus Melchior
-                                        p.fst-italic.mt-3.text-center "Als de Ab-Actis moet pissen, dan moet de Ab-Actis pissen."
-
-                        .col-lg-4.col-sm-6.mb-5
-                            .card.h-100.border-1.shadow-sm
-                                img.card-img-top(src='./assets/img/Leden/Zwerts.png', alt='')
-                                .card-body.p-4
-                                    h4.fw-bold.card-title.mb-3 Mgr. B.L.H.J. Zwerts
-                                    ul.fs-5.list-group.list-unstyled
-                                        li Inquisiteur
-                                        li Lid sedert december 2003
-                                        li Favoriete wijn: Onbekend
-                                        p.fst-italic.mt-3.text-center "Nobody expects the Zwertsian Inquisition!"
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
@@ -147,13 +170,16 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(src='./assets/img/Leden/Houthuijs.png', alt='')
+                                img.card-img-top(src='./assets/img/Leden/Zwerts.png', alt='')
                                 .card-body.p-4
-                                    h4.fw-bold.card-title.mb-3 Mgr. T.J. Houthuijs
+                                    h4.fw-bold.card-title.mb-3 Mgr. B.L.H.J. Zwerts
                                     ul.fs-5.list-group.list-unstyled
-                                        li Dux Luxuriae
-                                        li Lid sedert december 2019
-                                        li Favoriete wijn: pakwijn
+                                        li Inquisiteur
+                                        li Lid sedert december 2003
+                                        li Favoriete wijn: Onbekend
+                                        p.fst-italic.mt-3.text-center "Nobody expects the Zwertsian Inquisition!"
+
+                        // -------------------- GEEN TITLES --------------------
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
@@ -193,19 +219,9 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(src='./assets/img/Leden/Damhuis.png', alt='')
-                                .card-body.p-4
-                                    h4.fw-bold.card-title.mb-3 Mgr. L.R.J. Damhuis
-                                    ul.fs-5.list-group.list-unstyled
-                                        li Lid sedert april 2015
-                                        li Favoriete wijn: Whale's Tale Sauvignon Blanc
-                                        p.fst-italic.mt-3.text-center "Als één hert over De Dam is, volgen er meer!"
-
-                        .col-lg-4.col-sm-6.mb-5
-                            .card.h-100.border-1.shadow-sm
                                 img.card-img-top(src='./assets/img/Leden/Emons.png', alt='')
                                 .card-body.p-4
-                                    h4.fw-bold.card-title.mb-3 Dhr. D.C.L. Emons
+                                    h4.fw-bold.card-title.mb-3 Mgr. D.C.L. Emons
                                     ul.fs-5.list-group.list-unstyled
                                         li Lid sedert mei 2019
                                         li Favoriete wijn: Thompson Estate Margaret River Chardonnay
