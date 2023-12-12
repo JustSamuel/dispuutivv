@@ -48,7 +48,7 @@ jobs:
           mkdir -p ~/.ssh
           echo "${{ secrets.RUNNER_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          echo "${{ vars.KNOWN_KEYS }} >> ~/.ssh/known_hosts
+          echo "${{ vars.KNOWN_KEYS }}" >> ~/.ssh/known_hosts
       - name: Deploy to server
         run: |
           sftp -oBatchMode=no -b - ivv_deployment@webhost.gewis.nl <<EOF
