@@ -1,7 +1,7 @@
 function getCheer() {
     const date = new Date();
     const proosten =  ['Yamas!', 'Proost!', 'Santé!', 'Cheers!', 'Prosit!', 'Skøll!', 'Egészségedre!'];
-    return proosten[date.getDay()]
+    return ` ${proosten[date.getDay()]}`
 }
 
 window.onload = function(){

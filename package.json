@@ -3,14 +3,8 @@
     "name": "startbootstrap-modern-business",
     "version": "5.0.7",
     "scripts": {
-        "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
-        "build:assets": "node scripts/build-assets.js",
-        "build:pug": "node scripts/build-pug.js",
-        "build:scripts": "node scripts/build-scripts.js",
-        "build:scss": "node scripts/build-scss.js",
-        "clean": "node scripts/clean.js",
-        "start": "npm run build && node scripts/start.js",
-        "start:debug": "npm run build && node scripts/start-debug.js"
+        "build": "parcel build ./src/index.pug",
+        "start": "parcel ./src/index.pug"
     },
     "description": "A multipurpose HTML website template built with Bootstrap",
     "keywords": [
@@ -36,18 +30,21 @@
         "url": "https://github.com/StartBootstrap/startbootstrap-modern-business.git"
     },
     "dependencies": {
+        "@parcel/transformer-pug": "^2.10.3",
         "bootstrap": "5.2.3",
-        "jquery": "^3.7.1"
+        "jquery": "^3.7.1",
+        "parcel": "^2.10.3"
     },
     "devDependencies": {
         "autoprefixer": "10.4.14",
         "browser-sync": "2.29.1",
         "chokidar": "3.5.3",
         "concurrently": "6.3.0",
-        "postcss": "8.4.21",
+        "cssnano": "^4.1.11",
+        "postcss": "^8.4.32",
         "prettier": "2.8.6",
-        "pug": "3.0.2",
-        "sass": "1.60.0",
+        "pug": "^3.0.2",
+        "sass": "^1.60.0",
         "shelljs": "0.8.5",
         "upath": "2.0.1"
     }

@@ -20,14 +20,14 @@ html(lang='en')
 
         script(src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous")
         script(src="./js/scripts.js")
-        include includes/css.pug
+        include includes/css
 
     body.d-flex.flex-column.h-100
 
         main.flex-shrink-0
 
             // Navigation
-            include includes/navbar.pug
+            include includes/navbar
 
             // Header
             header
@@ -92,6 +92,7 @@ html(lang='en')
                                         li Praeses, tevens Typo3-fanaticus
                                         li Lid sedert mei 2022
                                         li Favoriete wijn: Pagus Bisano Amarone della Valpolicella 2018
+                                        p.fst-italic.mt-3.text-center "Praeses van het volk!"
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
                                 img.card-img-top(src='./assets/img/Leden/Mokveld.jpeg')
@@ -483,6 +484,6 @@ html(lang='en')
                                 | 5600 MB Eindhoven
 
         // Footer
-        include includes/footer.pug
+        include includes/footer
 
-        include includes/scripts.pug
+        include includes/scripts
