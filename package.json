@@ -36,6 +36,7 @@
         "parcel": "^2.10.3"
     },
     "devDependencies": {
+        "@parcel/transformer-webmanifest": "^2.10.3",
         "autoprefixer": "10.4.14",
         "browser-sync": "2.29.1",
         "chokidar": "3.5.3",
