@@ -36,6 +36,7 @@
         "parcel": "^2.10.3"
     },
     "devDependencies": {
+        "@parcel/packager-raw-url": "^2.10.3",
         "@parcel/transformer-sass": "^2.10.3",
         "@parcel/transformer-webmanifest": "^2.10.3",
         "autoprefixer": "10.4.14",
