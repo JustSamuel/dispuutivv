@@ -5,9 +5,11 @@ function getCheer() {
 }
 
 window.onload = function(){
-    console.error("load")
     const cheerElement = document.getElementById("cheer-of-the-day");
     const cheer = getCheer();
-    console.error(cheerElement.textContent, cheer)
     cheerElement.textContent = cheer;
+
+    const yearElement = document.getElementById("year");
+    const year = new Date().getFullYear();
+    yearElement.textContent = year;
 };
