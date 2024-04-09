@@ -40,11 +40,11 @@ html(lang='en')
                         button(data-bs-target="#carousel" data-bs-slide-to="3" aria-current="true")
                         button(data-bs-target="#carousel" data-bs-slide-to="4" aria-current="true")
                     .carousel-inner(role='listbox')
-                        .carousel-item.active(style="background-image: url('./assets/img/carousel/Statieportret2019.gif')")
-                        .carousel-item(style="background-image: url('./assets/img/carousel/IVV-Spel-Met-Ballen-2023-166942.jpeg')")
-                        .carousel-item(style="background-image: url('./assets/img/carousel/Praesesportretten.png')")
-                        .carousel-item(style="background-image: url('./assets/img/carousel/carousel3.gif')")
-                        .carousel-item(style="background-image: url('./assets/img/carousel/carousel4.gif')")
+                        .carousel-item.active(style!="background-image: url('./assets/img/carousel/Statieportret2019.gif?as=avif&width=1920')")
+                        .carousel-item(style!="background-image: url('./assets/img/carousel/IVV-Spel-Met-Ballen-2023-166942.jpeg?as=avif&width=1920')")
+                        .carousel-item(style!="background-image: url('./assets/img/carousel/Praesesportretten.png?as=avif&width=1920')")
+                        .carousel-item(style!="background-image: url('./assets/img/carousel/carousel3.gif?as=avif&width=1920')")
+                        .carousel-item(style!="background-image: url('./assets/img/carousel/carousel4.gif?as=avif&width=1920')")
                     button.carousel-control-prev(data-bs-target="#carousel", data-bs-slide="prev")
                         span.carousel-control-prev-icon
                     button.carousel-control-next(data-bs-target="#carousel", data-bs-slide="next")
@@ -68,7 +68,7 @@ html(lang='en')
                             .fs-5.mb-4 Hèt Dispuut "In Vino Veritas" staat voor de bourgondische levensstijl, heerlijk eten en bovenal de consumptie van de alom bekende godendrank op druivenbasis: wijn. Bij I.V.V staat het genieten van het studentenleven centraal, een visie waaraan de leden van moedervereniging GEWIS herinnerd worden door middel van, onder andere, de beruchte Maand'lijksche Borrels, het jaarlijks terugkerende Spel met Ballen en als spektakelsuk het alom populaire Decadent Weekend.
                             .fs-5.mb-4 Op deze digitale pagina van Hèt Dispuut vindt u een overzicht van onze leden, ieder vergezeld door een onmisbaar kiekje van betreffend lid, een deelverzameling van onze dispuutsstukken, en contactgegevens indien u in contact wil komen met onze Ab-Actis.
                         .col-lg-6
-                            img.img-fluid.rounded(loading='lazy' src='./assets/img/Borreltijd.png', alt='Borreltijd')
+                            img.img-fluid.rounded(loading='lazy', srcset!='./assets/img/Borreltijd.png?as=avif&width=600', alt='Borreltijd')
             // Blog preview section
             section#leden
                 .container.px-4.mt-5
@@ -86,7 +86,7 @@ html(lang='en')
                     .row
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Oosterholt.png')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Oosterholt.png?as=avif&width=450')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Dhr. S.A.J. Oosterholt
                                     ul.fs-5.list-group.list-unstyled
@@ -96,7 +96,7 @@ html(lang='en')
                                         p.fst-italic.mt-3.text-center "Praeses van het volk!"
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Mokveld.jpeg')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Mokveld.jpeg?as=avif&width=450')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Dhr. S.A. Mokveld
                                     ul.fs-5.list-group.list-unstyled
@@ -107,7 +107,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Henkemans.jpeg', alt='')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Henkemans.jpeg?as=avif&width=450', alt='')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Dhr. B. Henkemans
                                     ul.fs-5.list-group.list-unstyled
@@ -117,7 +117,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Verkade.jpeg')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Verkade.jpeg?as=avif&width=450')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Dhr. D.P. Verkade
                                     ul.fs-5.list-group.list-unstyled
@@ -129,7 +129,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Bosma.png', alt='')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Bosma.png?as=avif&width=450', alt='')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Mgr. B.H. Bosma
                                     ul.fs-5.list-group.list-unstyled
@@ -140,7 +140,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Houthuijs.png', alt='')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Houthuijs.png?as=avif&width=450', alt='')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Mgr. T.J. Houthuijs
                                     ul.fs-5.list-group.list-unstyled
@@ -150,7 +150,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Koster.jpeg', alt='')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Koster.jpeg?as=avif&width=450', alt='')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Dhr. M.B. Koster
                                     ul.fs-5.list-group.list-unstyled
@@ -160,7 +160,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Sanders.png', alt='')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Sanders.png?as=avif&width=450', alt='')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Mgr. J.J. Sanders
                                     ul.fs-5.list-group.list-unstyled
@@ -170,7 +170,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Zwerts.png', alt='')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Zwerts.png?as=avif&width=450', alt='')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Mgr. B.L.H.J. Zwerts
                                     ul.fs-5.list-group.list-unstyled
@@ -183,7 +183,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Aerts.png', alt='')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Aerts.png?as=avif&width=450', alt='')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Mgr. N.K.M. Aerts
                                     ul.fs-5.list-group.list-unstyled
@@ -192,7 +192,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Beckers.png', alt='')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Beckers.png?as=avif&width=450', alt='')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Mgr. R.J.J. Beckers
                                     ul.fs-5.list-group.list-unstyled
@@ -201,7 +201,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Beekveld.png', alt='')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Beekveld.png?as=avif&width=450', alt='')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Mgr. E.T.G. van Beekveld
                                     ul.fs-5.list-group.list-unstyled
@@ -210,7 +210,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Ceelen.png', alt='')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Ceelen.png?as=avif&width=450', alt='')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Mgr. P. Ceelen
                                     ul.fs-5.list-group.list-unstyled
@@ -219,7 +219,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Damhuis.png', alt='')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Damhuis.png?as=avif&width=450', alt='')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Mgr. L.R.J. Damhuis
                                     ul.fs-5.list-group.list-unstyled
@@ -229,7 +229,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Emons.png', alt='')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Emons.png?as=avif&width=450', alt='')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Mgr. D.C.L. Emons
                                     ul.fs-5.list-group.list-unstyled
@@ -238,7 +238,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Fasting.png', alt='')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Fasting.png?as=avif&width=450', alt='')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Mgr. L.A. Fasting
                                     ul.fs-5.list-group.list-unstyled
@@ -247,7 +247,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Geffen.png', alt='')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Geffen.png?as=avif&width=450', alt='')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Mgr. B.A.M. van Geffen
                                     ul.fs-5.list-group.list-unstyled
@@ -256,7 +256,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Gieling.png', alt='')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Gieling.png?as=avif&width=450', alt='')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Dhr. B.W.T. Gieling
                                     ul.fs-5.list-group.list-unstyled
@@ -265,7 +265,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Godtschalk.png', alt='')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Godtschalk.png?as=avif&width=450', alt='')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Mgr. A.S. Godtschalk
                                     ul.fs-5.list-group.list-unstyled
@@ -274,7 +274,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Horssen.png', alt='')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Horssen.png?as=avif&width=450', alt='')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Mgr. C. van Horssen
                                     ul.fs-5.list-group.list-unstyled
@@ -283,7 +283,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Janssen.png', alt='')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Janssen.png?as=avif&width=450', alt='')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Mgr. G. Janssen
                                     ul.fs-5.list-group.list-unstyled
@@ -292,7 +292,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Keltjens.png', alt='')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Keltjens.png?as=avif&width=450', alt='')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Mgr. V.A.G. Keltjens
                                     ul.fs-5.list-group.list-unstyled
@@ -301,7 +301,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Kerstens.png', alt='')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Kerstens.png?as=avif&width=450', alt='')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Mgr. S.L. Kerstens
                                     ul.fs-5.list-group.list-unstyled
@@ -310,7 +310,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Ledeboer.png', alt='')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Ledeboer.png?as=avif&width=450', alt='')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Mgr. T.S. Ledeboer
                                     ul.fs-5.list-group.list-unstyled
@@ -319,7 +319,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Lodewijks.png', alt='')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Lodewijks.png?as=avif&width=450', alt='')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Mgr. B. Lodewijks
                                     ul.fs-5.list-group.list-unstyled
@@ -329,7 +329,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Maes.png', alt='')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Maes.png?as=avif&width=450', alt='')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Dhr. Q. Maes
                                     ul.fs-5.list-group.list-unstyled
@@ -339,7 +339,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Meeles.png', alt='')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Meeles.png?as=avif&width=450', alt='')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Mgr. T. Meeles
                                     ul.fs-5.list-group.list-unstyled
@@ -349,7 +349,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Meijaard.png', alt='')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Meijaard.png?as=avif&width=450', alt='')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Mgr. Y.J. Meijaard
                                     ul.fs-5.list-group.list-unstyled
@@ -358,7 +358,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Nijhuis.png', alt='')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Nijhuis.png?as=avif&width=450', alt='')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Mgr. T.R.Th. Nijhuis
                                     ul.fs-5.list-group.list-unstyled
@@ -367,7 +367,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Peters.jpg', alt='')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Peters.jpg?as=avif&width=450', alt='')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Dhr. J.L. Peters
                                     ul.fs-5.list-group.list-unstyled
@@ -376,7 +376,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Roobeek.png', alt='')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Roobeek.png?as=avif&width=450', alt='')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Mgr. E. Roobeek
                                     ul.fs-5.list-group.list-unstyled
@@ -385,7 +385,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Schepens.png', alt='')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Schepens.png?as=avif&width=450', alt='')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Mgr. R.L. Schepens
                                     ul.fs-5.list-group.list-unstyled
@@ -394,7 +394,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Thiel.png', alt='')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Thiel.png?as=avif&width=450', alt='')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Mgr. J.B. van Thiel
                                     ul.fs-5.list-group.list-unstyled
@@ -403,7 +403,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Timmerman.png', alt='')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Timmerman.png?as=avif&width=450', alt='')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Mgr. Th.R. Timmerman
                                     ul.fs-5.list-group.list-unstyled
@@ -412,7 +412,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Veenendaal.png', alt='')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Veenendaal.png?as=avif&width=450', alt='')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Mgr. M. van Veenendaal
                                     ul.fs-5.list-group.list-unstyled
@@ -422,7 +422,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Verheijen.png', alt='')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Verheijen.png?as=avif&width=450', alt='')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Mgr. W.J.A. Verheijen
                                     ul.fs-5.list-group.list-unstyled
@@ -431,7 +431,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Wong.png', alt='')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Wong.png?as=avif&width=450', alt='')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Mgr. Y.G. Wong
                                     ul.fs-5.list-group.list-unstyled
@@ -440,7 +440,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Zelst.png', alt='')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Zelst.png?as=avif&width=450', alt='')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Mgr. S.J. van Zelst
                                     ul.fs-5.list-group.list-unstyled
@@ -449,7 +449,7 @@ html(lang='en')
 
                         .col-lg-4.col-sm-6.mb-5
                             .card.h-100.border-1.shadow-sm
-                                img.card-img-top(loading='lazy' src='./assets/img/Leden/Smeets.png', alt='')
+                                img.card-img-top(loading='lazy', srcset!='./assets/img/Leden/Smeets.png?as=avif&width=450', alt='')
                                 .card-body.p-4
                                     h4.fw-bold.card-title.mb-3 Martinus (Mart) Jan Smeets
                                     ul.fs-5.list-group.list-unstyled
@@ -460,11 +460,11 @@ html(lang='en')
             section#contact
                 .row.justify-content-center
                     .col-lg-6
-                        img.img-fluid(loading='lazy' src='./assets/img/Cantus.png', alt='')
+                        img.img-fluid(loading='lazy', srcset!='./assets/img/Cantus.png?as=avif&width=1200', alt='')
                 .container.px-4.my-5
                     .row
                         //.col-lg-4.d-flex
-                        //    img.img-fluid.rounded(src='photos/Cantus.png', alt='')
+                        //    img.img-fluid.rounded(srcset!='photos/Cantus.png?as=avif&width=450', alt='')
                         .col-lg-4.d-flex
                             p
                                 b Algemene contactgegevens:
