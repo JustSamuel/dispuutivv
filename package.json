@@ -1,12 +1,11 @@
 {
-    "title": "Modern Business",
-    "name": "startbootstrap-modern-business",
+    "title": "dispuutivv",
     "version": "5.0.7",
     "scripts": {
         "build": "parcel build ./src/index.pug",
         "start": "parcel ./src/index.pug"
     },
-    "description": "A multipurpose HTML website template built with Bootstrap",
+    "description": "Website der Dispuut 'In Vino Veritas'",
     "keywords": [
         "css",
         "sass",
@@ -15,31 +14,26 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/modern-business",
+    "homepage": "https://dispuutivv.nl",
     "bugs": {
-        "url": "https://github.com/StartBootstrap/startbootstrap-modern-business/issues",
-        "email": "feedback@startbootstrap.com"
+        "url": "https://github.com/JustSamuel/dispuutivv/issues"
     },
     "license": "MIT",
-    "author": "Start Bootstrap",
-    "contributors": [
-        "David Miller (https://davidmiller.io/)"
-    ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/StartBootstrap/startbootstrap-modern-business.git"
+        "url": "https://github.com/JustSamuel/dispuutivv"
     },
     "dependencies": {
-        "@parcel/transformer-pug": "^2.10.3",
+        "@parcel/transformer-pug": "^2.12.0",
         "bootstrap": "5.2.3",
         "jquery": "^3.7.1",
-        "parcel": "^2.10.3",
-        "sharp": "^0.31.0"
+        "parcel": "^2.12.0",
+        "sharp": "^0.31.1"
     },
     "devDependencies": {
-        "@parcel/packager-raw-url": "^2.10.3",
-        "@parcel/transformer-sass": "^2.10.3",
-        "@parcel/transformer-webmanifest": "^2.10.3",
+        "@parcel/packager-raw-url": "^2.12.0",
+        "@parcel/transformer-sass": "^2.12.0",
+        "@parcel/transformer-webmanifest": "^2.12.0",
         "autoprefixer": "10.4.14",
         "browser-sync": "2.29.1",
         "chokidar": "3.5.3",
