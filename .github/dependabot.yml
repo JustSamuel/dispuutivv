@@ -1,0 +1,6 @@
+version: 2
+updates:
+  - package-ecosystem: "npm" # Specify npm as the package manager
+    directory: /
+    schedule:
+      interval: "weekly" # Set the update schedule to weekly
