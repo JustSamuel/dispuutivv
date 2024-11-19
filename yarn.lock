@@ -1418,13 +1418,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/transformer-pug@npm:^2.12.0":
-  version: 2.12.0
-  resolution: "@parcel/transformer-pug@npm:2.12.0"
+"@parcel/transformer-pug@npm:^2.13.0":
+  version: 2.13.0
+  resolution: "@parcel/transformer-pug@npm:2.13.0"
   dependencies:
-    "@parcel/plugin": "npm:2.12.0"
+    "@parcel/plugin": "npm:2.13.0"
     pug: "npm:^3.0.2"
-  checksum: 10c0/681de384e5c759bc3fb00a0abb78024897785cf8e3df3b98aad4dbea971cea09f8749b6bc1f7c470a17b7fb754b50d5d7cd7fbd6e0acfd918785911bab751a95
+  checksum: 10c0/50b4211cb9d27c77b8777c946e7e860419389ece303455f2a3cd49ea2ddedfc3efcc642c7a9a4793a8b95c11b580e8003598684625725136d677420c15fe4950
   languageName: node
   linkType: hard
 
@@ -5615,7 +5615,7 @@ __metadata:
     "@parcel/config-default": "npm:^2.12.0"
     "@parcel/core": "npm:^2.12.0"
     "@parcel/packager-raw-url": "npm:^2.12.0"
-    "@parcel/transformer-pug": "npm:^2.12.0"
+    "@parcel/transformer-pug": "npm:^2.13.0"
     "@parcel/transformer-sass": "npm:^2.12.0"
     "@parcel/transformer-webmanifest": "npm:^2.12.0"
     autoprefixer: "npm:10.4.20"
