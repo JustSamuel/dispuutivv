@@ -33,7 +33,7 @@
         "sharp": "^0.33.5"
     },
     "devDependencies": {
-        "@parcel/packager-raw-url": "^2.13.0",
+        "@parcel/packager-raw-url": "^2.13.2",
         "@parcel/transformer-sass": "^2.13.0",
         "@parcel/transformer-webmanifest": "^2.13.0",
         "autoprefixer": "10.4.20",

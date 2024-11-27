@@ -1037,13 +1037,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/packager-raw-url@npm:^2.13.0":
-  version: 2.13.0
-  resolution: "@parcel/packager-raw-url@npm:2.13.0"
+"@parcel/packager-raw-url@npm:^2.13.2":
+  version: 2.13.2
+  resolution: "@parcel/packager-raw-url@npm:2.13.2"
   dependencies:
-    "@parcel/plugin": "npm:2.13.0"
-    "@parcel/utils": "npm:2.13.0"
-  checksum: 10c0/12ab76c965b871427e3e475eab281d83ac5919fc94195805e8601b44a6b2908fbe03946ef37995ce3c609f4997ddbf5b4d9e5cc0335d7ea4b452f433301bf970
+    "@parcel/plugin": "npm:2.13.2"
+    "@parcel/utils": "npm:2.13.2"
+  checksum: 10c0/ad49ca8755431a08d40ca74e12e2b5e9ad3c0850f6483d811825cd236871316961b14f2a476ec4f01fd006a3fb3e6798ae7902aadc1e71c2ede6493bbc07723b
   languageName: node
   linkType: hard
 
@@ -5344,7 +5344,7 @@ __metadata:
   dependencies:
     "@parcel/config-default": "npm:^2.13.0"
     "@parcel/core": "npm:^2.13.2"
-    "@parcel/packager-raw-url": "npm:^2.13.0"
+    "@parcel/packager-raw-url": "npm:^2.13.2"
     "@parcel/transformer-pug": "npm:^2.13.2"
     "@parcel/transformer-sass": "npm:^2.13.0"
     "@parcel/transformer-webmanifest": "npm:^2.13.0"
