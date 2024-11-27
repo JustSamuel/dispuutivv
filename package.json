@@ -34,7 +34,7 @@
     },
     "devDependencies": {
         "@parcel/packager-raw-url": "^2.13.0",
-        "@parcel/transformer-sass": "^2.13.0",
+        "@parcel/transformer-sass": "^2.13.2",
         "@parcel/transformer-webmanifest": "^2.13.0",
         "autoprefixer": "10.4.20",
         "browser-sync": "3.0.3",
