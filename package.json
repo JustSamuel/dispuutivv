@@ -24,7 +24,7 @@
         "url": "https://github.com/JustSamuel/dispuutivv"
     },
     "dependencies": {
-        "@parcel/config-default": "^2.13.0",
+        "@parcel/config-default": "^2.13.2",
         "@parcel/core": "^2.13.2",
         "@parcel/transformer-pug": "^2.13.2",
         "bootstrap": "5.3.3",
