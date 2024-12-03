@@ -42,7 +42,7 @@
         "concurrently": "9.1.0",
         "cssnano": "^7.0.6",
         "postcss": "^8.4.49",
-        "prettier": "3.3.3",
+        "prettier": "3.4.1",
         "pug": "^3.0.3",
         "sass": "^1.80.6",
         "shelljs": "0.8.5",
