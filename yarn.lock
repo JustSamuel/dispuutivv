@@ -2902,12 +2902,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chokidar@npm:4.0.1, chokidar@npm:^4.0.0":
-  version: 4.0.1
-  resolution: "chokidar@npm:4.0.1"
+"chokidar@npm:4.0.2":
+  version: 4.0.2
+  resolution: "chokidar@npm:4.0.2"
   dependencies:
     readdirp: "npm:^4.0.1"
-  checksum: 10c0/4bb7a3adc304059810bb6c420c43261a15bb44f610d77c35547addc84faa0374265c3adc67f25d06f363d9a4571962b02679268c40de07676d260de1986efea9
+  checksum: 10c0/562a3456d529ce9e16f9a6447f86a3e82a816200fed473fa0b6f84b447ce29f96210c92874a8d5e619a0b453d92a352e93252baa214e376a9a08489e96337c65
   languageName: node
   linkType: hard
 
@@ -2927,6 +2927,15 @@ __metadata:
     fsevents:
       optional: true
   checksum: 10c0/8361dcd013f2ddbe260eacb1f3cb2f2c6f2b0ad118708a343a5ed8158941a39cb8fb1d272e0f389712e74ee90ce8ba864eece9e0e62b9705cb468a2f6d917462
+  languageName: node
+  linkType: hard
+
+"chokidar@npm:^4.0.0":
+  version: 4.0.1
+  resolution: "chokidar@npm:4.0.1"
+  dependencies:
+    readdirp: "npm:^4.0.1"
+  checksum: 10c0/4bb7a3adc304059810bb6c420c43261a15bb44f610d77c35547addc84faa0374265c3adc67f25d06f363d9a4571962b02679268c40de07676d260de1986efea9
   languageName: node
   linkType: hard
 
@@ -5786,7 +5795,7 @@ __metadata:
     autoprefixer: "npm:10.4.20"
     bootstrap: "npm:5.3.3"
     browser-sync: "npm:3.0.3"
-    chokidar: "npm:4.0.1"
+    chokidar: "npm:4.0.2"
     concurrently: "npm:9.1.0"
     cssnano: "npm:^7.0.6"
     jquery: "npm:^3.7.1"
