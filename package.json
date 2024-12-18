@@ -29,7 +29,7 @@
         "@parcel/transformer-pug": "^2.13.2",
         "bootstrap": "5.3.3",
         "jquery": "^3.7.1",
-        "parcel": "^2.13.0",
+        "parcel": "^2.13.3",
         "sharp": "^0.33.5"
     },
     "devDependencies": {
