@@ -3,7 +3,7 @@ WORKDIR /app
 
 RUN corepack enable && corepack prepare yarn@4.5.1 --activate
 
-COPY package.json yarn.lock ./
+COPY package.json yarn.lock .yarnrc.yml ./
 RUN yarn install
 COPY . .
 RUN yarn build
