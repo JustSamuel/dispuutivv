@@ -1,54 +1,22 @@
-name: Node.js CI
+name: CI
 
 on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+    push:
+        branches: [ "master" ]
+    pull_request:
+        branches: [ "master" ]
 
 jobs:
-  build:
-      runs-on: ubuntu-latest
-
-      strategy:
-          matrix:
-              node-version: [20.x]
-
-      steps:
-          - uses: actions/checkout@v4
-
-          - name: Use Node.js ${{ matrix.node-version }}
-            uses: actions/setup-node@v4
-
-          - run: corepack enable
-
-          - run: yarn install --frozen-lockfile
-          - run: yarn build
-
-          - name: Archive production artifacts
-            uses: actions/upload-artifact@v4
-            with:
-                name: dist
-                path: dist/
-
-  deploy:
-    if: github.ref == 'refs/heads/master' && github.event_name == 'push'
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v4
+    build-and-lint:
+        uses: GEWIS/actions/.github/workflows/lint-and-build-yarn.yml@v1
         with:
-          name: dist
+            node-version: '20.x'
+            format: true
+            test: false
 
-      - name: Set up SSH key
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.RUNNER_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          echo "${{ vars.KNOWN_KEYS }}" >> ~/.ssh/known_hosts
-      - name: Deploy to server
-        run: |
-          sftp -oBatchMode=no -b - ivv_deployment@webhost.gewis.nl <<EOF
-          put -r * /ivv/public_html
-          EOF
+    dockerize:
+        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+        needs: build-and-lint
+        uses: GEWIS/actions/.github/workflows/docker-build.yml@v1
+        with:
+            projects: '["."]'
