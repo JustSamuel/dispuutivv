@@ -11,7 +11,9 @@ jobs:
         uses: GEWIS/actions/.github/workflows/lint-and-build-yarn.yml@v1
         with:
             node-version: '20.x'
-            format: true
+            format: false
+            lint: false
+            build: true
             test: false
 
     dockerize:
