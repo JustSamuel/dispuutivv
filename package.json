@@ -28,7 +28,7 @@
         "@parcel/core": "^2.13.3",
         "@parcel/transformer-pug": "^2.13.3",
         "@popperjs/core": "^2.11.8",
-        "bootstrap": "5.3.3",
+        "bootstrap": "5.3.6",
         "jquery": "^3.7.1",
         "parcel": "^2.13.0",
         "sharp": "^0.33.5"
