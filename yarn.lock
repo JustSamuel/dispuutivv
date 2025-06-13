@@ -1561,14 +1561,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/transformer-sass@npm:^2.13.3":
-  version: 2.14.4
-  resolution: "@parcel/transformer-sass@npm:2.14.4"
+"@parcel/transformer-sass@npm:^2.15.2":
+  version: 2.15.2
+  resolution: "@parcel/transformer-sass@npm:2.15.2"
   dependencies:
-    "@parcel/plugin": "npm:2.14.4"
+    "@parcel/plugin": "npm:2.15.2"
     "@parcel/source-map": "npm:^2.1.1"
-    sass: "npm:^1.38.0"
-  checksum: 10c0/7332506e62b717f16a5ec810ce6f7856dcbbe896ee70ada0299d0bcabae3bb32794e63c409b94f64cb3747c0d4b90fc41f89849e0011f00cccf81a604a5a4974
+    sass: "npm:^1.88.0"
+  checksum: 10c0/29df0806562c34a0379626ae3a8d617a559fd7fef9737dbe0d17f4a665061be22b9697d2e34c4e25a1adc18069bd80146bf5656aea062aae14e9c3599f87df2c
   languageName: node
   linkType: hard
 
@@ -5539,7 +5539,7 @@ __metadata:
     "@parcel/core": "npm:^2.15.2"
     "@parcel/packager-raw-url": "npm:^2.13.3"
     "@parcel/transformer-pug": "npm:^2.13.3"
-    "@parcel/transformer-sass": "npm:^2.13.3"
+    "@parcel/transformer-sass": "npm:^2.15.2"
     "@parcel/transformer-webmanifest": "npm:^2.13.3"
     "@popperjs/core": "npm:^2.11.8"
     autoprefixer: "npm:10.4.21"
@@ -5600,7 +5600,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.38.0, sass@npm:^1.83.4":
+"sass@npm:^1.83.4":
   version: 1.87.0
   resolution: "sass@npm:1.87.0"
   dependencies:
@@ -5614,6 +5614,23 @@ __metadata:
   bin:
     sass: sass.js
   checksum: 10c0/bd245faf14e4783dc547765350cf05817edaac0d6d6f6e4da8ab751f3eb3cc3873afd563c0ce416a24aa6c9c4e9023b05096447fc006660a01f76adffb54fbc6
+  languageName: node
+  linkType: hard
+
+"sass@npm:^1.88.0":
+  version: 1.89.2
+  resolution: "sass@npm:1.89.2"
+  dependencies:
+    "@parcel/watcher": "npm:^2.4.1"
+    chokidar: "npm:^4.0.0"
+    immutable: "npm:^5.0.2"
+    source-map-js: "npm:>=0.6.2 <2.0.0"
+  dependenciesMeta:
+    "@parcel/watcher":
+      optional: true
+  bin:
+    sass: sass.js
+  checksum: 10c0/752ccc7581b0c6395f63918116c20924e99943a86d79e94f5c4a0d41b1e981fe1f0ecd1ee82fff21496f81dbc91f68fb35a498166562ec8ec53e7aad7c3dbd9d
   languageName: node
   linkType: hard
 
