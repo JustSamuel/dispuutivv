@@ -19,18 +19,3 @@ jobs:
             lint: false
             build: true
             test: false
-
-    docker-release:
-        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
-        needs: build-and-lint
-        uses: GEWIS/actions/.github/workflows/docker-release.yml@v1
-        with:
-            projects: '["."]'
-            docker-paths: "['justsamuel/dispuutivv']"
-            github-registry: 'true'
-            version: 'main'
-        secrets:
-            # These are "required" but not needed when only using the GitHub registry
-            REGISTRY_USERNAME: "github-only"
-            REGISTRY_PASSWORD: "github-only"
-
