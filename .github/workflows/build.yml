@@ -6,6 +6,10 @@ on:
     pull_request:
         branches: [ "master" ]
 
+permissions:
+    contents: read
+    packages: write
+
 jobs:
     build-and-lint:
         uses: GEWIS/actions/.github/workflows/lint-and-build-yarn.yml@v1
@@ -22,8 +26,11 @@ jobs:
         uses: GEWIS/actions/.github/workflows/docker-release.yml@v1
         with:
             projects: '["."]'
+            docker-paths: "['justsamuel/dispuutivv']"
             github-registry: 'true'
-            docker-registry: 'ghcr.io'
-            docker-path: 'justsamuel/dispuutivv'
             version: 'main'
+        secrets:
+            # These are "required" but not needed when only using the GitHub registry
+            REGISTRY_USERNAME: "github-only"
+            REGISTRY_PASSWORD: "github-only"
 
