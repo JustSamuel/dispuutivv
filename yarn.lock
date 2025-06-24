@@ -1586,13 +1586,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/transformer-pug@npm:^2.15.2":
-  version: 2.15.2
-  resolution: "@parcel/transformer-pug@npm:2.15.2"
+"@parcel/transformer-pug@npm:^2.15.4":
+  version: 2.15.4
+  resolution: "@parcel/transformer-pug@npm:2.15.4"
   dependencies:
-    "@parcel/plugin": "npm:2.15.2"
+    "@parcel/plugin": "npm:2.15.4"
     pug: "npm:^3.0.3"
-  checksum: 10c0/1050b353f76d248176bdef7295017ef1bbdd4a204fc8dfca982496599cde7d22c93dc17f14d4dcd9ce99439841a9abca8a85243aa65c50e6204a5ea06456078c
+  checksum: 10c0/8f6b67c0600774a8acadff4c61e6d23b16abf7b6075e0dad080a8459b0df6b218a77c719c5f9e1535fa2894ed33649372482ce8a0111ff4457dab0669e44b6c8
   languageName: node
   linkType: hard
 
@@ -5323,7 +5323,7 @@ __metadata:
     "@parcel/config-default": "npm:^2.15.2"
     "@parcel/core": "npm:^2.15.4"
     "@parcel/packager-raw-url": "npm:^2.15.2"
-    "@parcel/transformer-pug": "npm:^2.15.2"
+    "@parcel/transformer-pug": "npm:^2.15.4"
     "@parcel/transformer-sass": "npm:^2.15.2"
     "@parcel/transformer-webmanifest": "npm:^2.15.2"
     "@popperjs/core": "npm:^2.11.8"
