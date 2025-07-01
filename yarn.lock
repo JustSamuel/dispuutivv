@@ -2015,15 +2015,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/transformer-webmanifest@npm:^2.15.2":
-  version: 2.15.2
-  resolution: "@parcel/transformer-webmanifest@npm:2.15.2"
+"@parcel/transformer-webmanifest@npm:^2.15.4":
+  version: 2.15.4
+  resolution: "@parcel/transformer-webmanifest@npm:2.15.4"
   dependencies:
     "@mischnic/json-sourcemap": "npm:^0.1.1"
-    "@parcel/diagnostic": "npm:2.15.2"
-    "@parcel/plugin": "npm:2.15.2"
-    "@parcel/utils": "npm:2.15.2"
-  checksum: 10c0/dedf058183953563b29dc948e459b7e0fdefd06527e2f3ab7c5e8ff3b4d062c507eb0ba6b5bb4738e141cd05e1d92013477fbe0c986054dfd40fdeff058553ca
+    "@parcel/diagnostic": "npm:2.15.4"
+    "@parcel/plugin": "npm:2.15.4"
+    "@parcel/utils": "npm:2.15.4"
+  checksum: 10c0/7735ff305ce00ad4db8fc8199f61873b08a4f69c879c7f8ffc8d05b5432bf91d59ec02b99080eddd13ad2c719edbca80a79edd304a64a2f6c674a2c39126dfc7
   languageName: node
   linkType: hard
 
@@ -5701,7 +5701,7 @@ __metadata:
     "@parcel/packager-raw-url": "npm:^2.15.2"
     "@parcel/transformer-pug": "npm:^2.15.4"
     "@parcel/transformer-sass": "npm:^2.15.2"
-    "@parcel/transformer-webmanifest": "npm:^2.15.2"
+    "@parcel/transformer-webmanifest": "npm:^2.15.4"
     "@popperjs/core": "npm:^2.11.8"
     autoprefixer: "npm:10.4.21"
     bootstrap: "npm:5.3.6"
