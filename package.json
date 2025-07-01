@@ -24,7 +24,7 @@
         "url": "https://github.com/JustSamuel/dispuutivv"
     },
     "dependencies": {
-        "@parcel/config-default": "^2.15.2",
+        "@parcel/config-default": "^2.15.4",
         "@parcel/core": "^2.15.4",
         "@parcel/transformer-pug": "^2.15.4",
         "@popperjs/core": "^2.11.8",
