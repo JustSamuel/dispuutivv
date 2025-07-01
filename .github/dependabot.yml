@@ -7,5 +7,5 @@ updates:
       groups:
           parcel:
               patterns:
-                  - "^parcel$"
-                  - "^@parcel/"
+                  - "parcel"
+                  - "@parcel/*"
