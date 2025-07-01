@@ -10,4 +10,6 @@ RUN yarn build
 
 FROM caddy:alpine
 COPY --from=builder /app/dist /usr/share/caddy
+COPY src/photos /static/photos
+COPY Caddyfile /etc/caddy/Caddyfile
 EXPOSE 80
