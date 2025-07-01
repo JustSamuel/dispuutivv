@@ -1191,13 +1191,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/packager-raw-url@npm:^2.15.2":
-  version: 2.15.2
-  resolution: "@parcel/packager-raw-url@npm:2.15.2"
+"@parcel/packager-raw-url@npm:^2.15.4":
+  version: 2.15.4
+  resolution: "@parcel/packager-raw-url@npm:2.15.4"
   dependencies:
-    "@parcel/plugin": "npm:2.15.2"
-    "@parcel/utils": "npm:2.15.2"
-  checksum: 10c0/a9618177fdb786bde67478a418c71bf026d03b00e7980b655f6050900b87e41c139c95aaff2a71159c91eb1a465c7be629d835e50e8ca6182bae241670a2dd70
+    "@parcel/plugin": "npm:2.15.4"
+    "@parcel/utils": "npm:2.15.4"
+  checksum: 10c0/7384055f87ef277b7f5bbfa3593464a5cfd6d204949080f66c92d5eb1175567a37cb2652cfadd3e9c67ca3c267293b16f0cd2a2ccd60898b3b9c9f451f3abb6d
   languageName: node
   linkType: hard
 
@@ -5698,7 +5698,7 @@ __metadata:
   dependencies:
     "@parcel/config-default": "npm:^2.15.2"
     "@parcel/core": "npm:^2.15.4"
-    "@parcel/packager-raw-url": "npm:^2.15.2"
+    "@parcel/packager-raw-url": "npm:^2.15.4"
     "@parcel/transformer-pug": "npm:^2.15.4"
     "@parcel/transformer-sass": "npm:^2.15.2"
     "@parcel/transformer-webmanifest": "npm:^2.15.2"
