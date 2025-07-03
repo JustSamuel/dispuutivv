@@ -4,7 +4,7 @@ function getCheer() {
     return ` ${proosten[date.getDay()]}`
 }
 
-window.onload = function(){
+document.addEventListener('DOMContentLoaded', () => {
     const cheerElement = document.getElementById("cheer-of-the-day");
     const cheer = getCheer();
     cheerElement.textContent = cheer;
@@ -12,4 +12,4 @@ window.onload = function(){
     const yearElement = document.getElementById("year");
     const year = new Date().getFullYear();
     yearElement.textContent = year;
-};
+});
