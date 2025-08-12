@@ -31,7 +31,7 @@
         "bootstrap": "5.3.7",
         "jquery": "^3.7.1",
         "parcel": "^2.15.4",
-        "sharp": "^0.33.5"
+        "sharp": "^0.34.3"
     },
     "devDependencies": {
         "@parcel/packager-raw-url": "^2.15.4",
