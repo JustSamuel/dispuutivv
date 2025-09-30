@@ -5030,7 +5030,7 @@ __metadata:
     postcss: "npm:^8.5.6"
     prettier: "npm:3.6.2"
     pug: "npm:^3.0.3"
-    sass: "npm:^1.90.0"
+    sass: "npm:^1.93.2"
     sharp: "npm:^0.33.5"
     shelljs: "npm:0.10.0"
     svgo: "npm:^4"
@@ -5094,9 +5094,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.90.0":
-  version: 1.90.0
-  resolution: "sass@npm:1.90.0"
+"sass@npm:^1.93.2":
+  version: 1.93.2
+  resolution: "sass@npm:1.93.2"
   dependencies:
     "@parcel/watcher": "npm:^2.4.1"
     chokidar: "npm:^4.0.0"
@@ -5107,7 +5107,7 @@ __metadata:
       optional: true
   bin:
     sass: sass.js
-  checksum: 10c0/cd882a61811447c079cdc78b41f3be8164f2a2ced56e0b256b33da2de383a5f10e11ed15f8080bd832e6df302238e11649b07eb5f6e7d257d9b6982a8325d269
+  checksum: 10c0/5a19f12dbe8c142e40c1e0473d1e624898242b1c21010301e169b528be8c580df6356329c798522b525eb11eda4b04b9b77422badc55c47889600f8477201d2b
   languageName: node
   linkType: hard
 
