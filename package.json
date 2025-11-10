@@ -24,19 +24,19 @@
         "url": "https://github.com/JustSamuel/dispuutivv"
     },
     "dependencies": {
-        "@parcel/config-default": "^2.16.0",
-        "@parcel/core": "^2.16.0",
-        "@parcel/transformer-pug": "^2.16.0",
+        "@parcel/config-default": "^2.16.1",
+        "@parcel/core": "^2.16.1",
+        "@parcel/transformer-pug": "^2.16.1",
         "@popperjs/core": "^2.11.8",
         "bootstrap": "5.3.8",
         "jquery": "^3.7.1",
-        "parcel": "^2.16.0",
+        "parcel": "^2.16.1",
         "sharp": "^0.33.5"
     },
     "devDependencies": {
-        "@parcel/packager-raw-url": "^2.16.0",
-        "@parcel/transformer-sass": "^2.16.0",
-        "@parcel/transformer-webmanifest": "^2.16.0",
+        "@parcel/packager-raw-url": "^2.16.1",
+        "@parcel/transformer-sass": "^2.16.1",
+        "@parcel/transformer-webmanifest": "^2.16.1",
         "autoprefixer": "10.4.21",
         "browser-sync": "3.0.4",
         "chokidar": "4.0.3",
