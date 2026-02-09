@@ -37,7 +37,7 @@
         "@parcel/packager-raw-url": "^2.16.4",
         "@parcel/transformer-sass": "^2.16.4",
         "@parcel/transformer-webmanifest": "^2.16.4",
-        "autoprefixer": "10.4.23",
+        "autoprefixer": "10.4.24",
         "browser-sync": "3.0.4",
         "chokidar": "5.0.0",
         "concurrently": "9.2.1",
