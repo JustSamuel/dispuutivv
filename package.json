@@ -48,7 +48,7 @@
         "sass": "^1.100.0",
         "shelljs": "0.10.0",
         "svgo": "^4",
-        "upath": "2.0.1"
+        "upath": "3.0.7"
     },
     "packageManager": "yarn@4.5.1"
 }
