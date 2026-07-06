@@ -5236,7 +5236,7 @@ __metadata:
     sharp: "npm:^0.33.5"
     shelljs: "npm:0.10.0"
     svgo: "npm:^4"
-    upath: "npm:3.0.7"
+    upath: "npm:3.0.8"
   languageName: unknown
   linkType: soft
 
@@ -5928,10 +5928,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"upath@npm:3.0.7":
-  version: 3.0.7
-  resolution: "upath@npm:3.0.7"
-  checksum: 10c0/3b0464cc761a898fa7d8eb3f034af5eeb31acc31c33a4c2523adbdd7d520db715317bb6f821dfb9db2acaa587f0f632e78bb133ac67c7d98d365844a0122fd61
+"upath@npm:3.0.8":
+  version: 3.0.8
+  resolution: "upath@npm:3.0.8"
+  checksum: 10c0/5d956961e88265332c7a672fb01524f66d6c1a19dfbf36c69222fd5762985df277b36af53679fe5f3e884c666fe91a3da831f59b20c4ecd1ed5540c54e5e89e2
   languageName: node
   linkType: hard
 
