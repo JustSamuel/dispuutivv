@@ -40,7 +40,7 @@
         "autoprefixer": "10.5.4",
         "browser-sync": "3.0.4",
         "chokidar": "5.0.0",
-        "concurrently": "10.0.3",
+        "concurrently": "10.0.4",
         "cssnano": "^8.0.1",
         "postcss": "^8.5.23",
         "prettier": "3.9.5",
