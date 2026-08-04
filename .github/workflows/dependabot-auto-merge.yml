@@ -15,6 +15,7 @@ jobs:
         permissions:
             contents: write
             pull-requests: write
+            actions: write
         with:
             auto-approve: true
             auto-merge: true
