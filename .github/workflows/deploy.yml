@@ -11,6 +11,12 @@ concurrency:
     group: deploy-production
     cancel-in-progress: false
 
+# The actual deploy is triggered by a GitHub webhook configured on this repo,
+# pointed at Coolify's manual webhook endpoint (routes/webhooks.php has no
+# IP-allowlist middleware, unlike Coolify's /api/* routes -- so this repo's
+# webhook works from GitHub's servers even though Coolify's API itself is
+# IP-restricted and would reject calls from Actions runners). This workflow
+# only tracks that deploy as a GitHub Deployment; it doesn't trigger it.
 jobs:
     deploy:
         runs-on: ubuntu-latest
@@ -43,34 +49,19 @@ jobs:
                           environment_url: 'https://dispuutivv.nl',
                       });
 
-            - name: Trigger Coolify deploy
-              id: trigger
-              env:
-                  COOLIFY_TOKEN: ${{ secrets.COOLIFY_TOKEN }}
-              run: |
-                  response=$(curl -sS -X POST "https://dev.oosterho.lt/api/v1/deploy" \
-                      -H "Authorization: Bearer $COOLIFY_TOKEN" \
-                      -H "Content-Type: application/json" \
-                      -d '{"uuid": "j11arvfxsvxqohvfd3ed6z7a"}')
-                  echo "$response"
-                  deployment_uuid=$(echo "$response" | python3 -c "import json,sys; print(json.load(sys.stdin)['deployments'][0]['deployment_uuid'])")
-                  echo "deployment_uuid=$deployment_uuid" >> "$GITHUB_OUTPUT"
-
-            - name: Wait for Coolify build to finish
+            - name: Wait for the site to come back up
               id: wait
-              env:
-                  COOLIFY_TOKEN: ${{ secrets.COOLIFY_TOKEN }}
               run: |
+                  url="http://j11arvfxsvxqohvfd3ed6z7a.178.104.113.205.sslip.io"
                   final_status="timeout"
-                  for i in $(seq 1 90); do
-                      status=$(curl -sS "https://dev.oosterho.lt/api/v1/deployments/${{ steps.trigger.outputs.deployment_uuid }}" \
-                          -H "Authorization: Bearer $COOLIFY_TOKEN" | python3 -c "import json,sys; print(json.load(sys.stdin).get('status',''))")
-                      echo "status: $status"
-                      if [ "$status" = "finished" ] || [ "$status" = "failed" ]; then
-                          final_status="$status"
+                  for i in $(seq 1 30); do
+                      sleep 10
+                      code=$(curl -sS -o /dev/null -w "%{http_code}" --max-time 10 "$url" || echo "000")
+                      echo "attempt $i: HTTP $code"
+                      if [ "$code" = "200" ]; then
+                          final_status="success"
                           break
                       fi
-                      sleep 10
                   done
                   echo "final_status=$final_status" >> "$GITHUB_OUTPUT"
 
@@ -83,9 +74,9 @@ jobs:
                           owner: context.repo.owner,
                           repo: context.repo.repo,
                           deployment_id: ${{ steps.deployment.outputs.id }},
-                          state: finalStatus === 'finished' ? 'success' : 'failure',
+                          state: finalStatus === 'success' ? 'success' : 'failure',
                           environment_url: 'https://dispuutivv.nl',
                       });
-                      if (finalStatus !== 'finished') {
-                          core.setFailed(`Coolify deployment ended with status: ${finalStatus}`);
+                      if (finalStatus !== 'success') {
+                          core.setFailed(`Site did not come back up after deploy (status: ${finalStatus})`);
                       }
