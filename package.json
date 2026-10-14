@@ -41,7 +41,7 @@
         "browser-sync": "3.0.4",
         "chokidar": "5.0.0",
         "concurrently": "10.0.5",
-        "cssnano": "^9.0.5",
+        "cssnano": "^9.6.0",
         "postcss": "^8.5.28",
         "prettier": "3.9.10",
         "pug": "^3.0.4",
