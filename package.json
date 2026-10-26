@@ -39,7 +39,7 @@
         "@parcel/transformer-webmanifest": "^2.16.4",
         "autoprefixer": "10.6.1",
         "browser-sync": "3.0.4",
-        "chokidar": "5.0.0",
+        "chokidar": "6.0.0",
         "concurrently": "10.0.6",
         "cssnano": "^9.9.0",
         "postcss": "^8.5.31",
