@@ -42,7 +42,7 @@
         "chokidar": "6.0.0",
         "concurrently": "10.0.7",
         "cssnano": "^9.9.0",
-        "postcss": "^8.5.32",
+        "postcss": "^8.5.33",
         "prettier": "3.10.1",
         "pug": "^3.0.4",
         "sass": "^1.108.2",
